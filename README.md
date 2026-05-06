@@ -1,2 +1,12 @@
-# Janroe-s-Website
-A fully responsive, single-page personal portfolio built with HTML5, CSS3, and Vanilla JavaScript to showcase my web development and data analysis projects. Features include smooth scrolling and an interactive recommendation system.
+Welcome to my personal  website! This project is a single-page, responsive site built to showcase my web development and data analysis projects.
+
+
+🛠️ Built With
+* HTML5
+* CSS3
+* JavaScript
+
+ ✨ Features
+* Responsive layout that works on both desktop and mobile
+* Smooth scrolling navigation
+* Interactive recommendation form
