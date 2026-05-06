@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janroe | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Janroe</div>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Project Details</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#recommendations">Recommendations</a></li>
+            <li><a href="#" id="home-icon"><i class="fas fa-home"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section (Personalized Profile) -->
+    <section id="about" class="about">
+        <div class="profile">
+            <!-- ←←← CHANGE THIS TO YOUR OWN PHOTO -->
+            <img src="https://via.placeholder.com/300/667eea/ffffff?text=Janroe" 
+                 alt="Janroe Profile Photo" 
+                 class="profile-img">
+
+            <h1>Hi, I'm Janroe</h1>
+            <p>Passionate web developer and data enthusiast from Cebu City. I enjoy building clean, responsive websites and using data analysis to solve real problems, including detecting credit card fraud patterns.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section - Five properly formatted skills with logos -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fab fa-html5 fa-3x"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js fa-3x"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <i class="fas fa-chart-bar fa-3x"></i>
+                <p>Data Analysis</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-python fa-3x"></i>
+                <p>Python</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Project Details</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Personal Portfolio Website</h3>
+                <p>Fully responsive single-page portfolio with smooth navigation and interactive recommendation system.</p>
+            </div>
+            <div class="project">
+                <h3>Credit Card Fraud Detection Analysis</h3>
+                <p>Analyzed transaction records to identify suspicious patterns such as address changes and unusual spending behavior.</p>
+            </div>
+            <div class="project">
+                <h3>E-Commerce Product Page</h3>
+                <p>Modern responsive e-commerce interface with product filtering and cart functionality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="recommendations">
+        <h2>Recommendations</h2>
+        <div id="rec-list"></div>
+
+        <div class="add-recommendation">
+            <h3>Submit a New Recommendation</h3>
+            <textarea id="rec-text" placeholder="Write your recommendation here..." rows="4"></textarea>
+            <input type="text" id="rec-author" placeholder="Your Name">
+            <button onclick="submitRecommendation()">Submit Recommendation</button>
+        </div>
+    </section>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h3>Thank You!</h3>
+            <p>Your recommendation has been added successfully.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
